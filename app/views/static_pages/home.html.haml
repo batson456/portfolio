@@ -1,0 +1,57 @@
+.hero-unit.well
+  %p Hello, my name is <b>Bryce</b>. I am freelance junior web developer living in New York and this is my <b>portfolio</b>.
+.container
+  .row
+    .divider
+      %span &diams;<span class="top">&diams;</span>&diams;
+    %h2.span12.center
+      %i Recent Projects
+
+  %ul.thumbnails
+
+    %li.span4
+      .thumbnail
+        = link_to image_tag("up.jpg"),"#", class: "thumbnail"
+        %p UP
+
+    %li.span4
+      .thumbnail
+        = link_to image_tag("toystory.jpg"), "#", class: "thumbnail"
+        %p Toy Story
+
+    %li.span4
+      .thumbnail
+        = link_to image_tag("walle.jpg"), "#", class: "thumbnail"
+        %p Walle
+  %ul.thumbnails
+
+    %li.span4
+      .thumbnail
+        = link_to image_tag("up.jpg"),"#", class: "thumbnail"
+        %p UP
+    %li.span4
+      .thumbnail
+        = link_to image_tag("toystory.jpg"), "#", class: "thumbnail"
+        %p Toy Story
+    %li.span4
+      .thumbnail
+        = link_to image_tag("walle.jpg"), "#", class: "thumbnail"
+        %p Walle
+  .divider
+    %span &diams; &diams;
+  .row
+    %h2.span12.center
+      %i Testmonials
+
+  :javascript
+    $(document).ready(function(){
+      $('#testimonials').bxSlider({
+        auto: true,
+        wrapperClass : 'testimonial-wrapper'
+      });
+    });
+
+  #testimonials.testimonial-wrapper
+    %div.well Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    %div.well Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+

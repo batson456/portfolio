@@ -1,7 +1,173 @@
+$green: #a7c84d;
+$blue: #00bbff;
+$navbarBackground: white;
+$navbarBackgroundHighlight: white;
+$navbarText:#999;
+$navbarLinkColor: #999;
+$navbarLinkColorHover: $green;
+
 @import "bootstrap";
 
 /***************************************
-* Default CSS Styling
+* Default Styling
 ***************************************/
+body{
+  padding-top:20px;
+  margin-bottom:0px;
+  background: url(body_bg.png) repeat top left;
+  color:$grayLight;
+  font: 14px/1.5 'Josefin Sans', Arial, 'Liberation Sans', FreeSans, sans-serif; color:#9A9A9A;
 
+}
+.center{
+  text-align:center;
+}
+/**************************************
+* Header Styling
+**************************************/
+#header{
+  list-style:none;
+  text-shadow: 0px 1px 1px #fff;
+  li{
+    display:inline-block;
+    width:100px;
+    text-align:center;
+    border-right:1px solid $grayLight;
+    a{
+      color:$grayLight;
+    }
+    a:hover{
+      text-decoration:none;
+      color:$blue;
+    }
+  }
+  li:last-child{
+    border-right:none;
+  }
+}
+#social-links{
+  text-align:right;
+  list-style:none;
+  li{
+    display:inline;
+  }
+  img{
+    opacity: .5;
+  }
+}
+/**************************************
+* Shadow and Spacer Styling
+**************************************/
+.divider{
+  margin:20px 0 20px 0;
+  text-shadow: 0px 1px 1px #fff;
+  border-top:1px solid $grayLight;
+  text-align:center;
+  font-size:30px;
+  span,h4{
+    color:$grayLight;
+    padding-left:8px;
+    padding-right:8px;
+    position:relative;
+    width:100%;
+    top:-0.7em;
+    background: url(body_bg.png) repeat top left;
+  }
+  .top{
+    top:-.5em;
+    padding:0px;
+    font-size:40px;
+  }
+  .bottom{
+    top:2em;
+    padding:0px;
+    font-size:40px;
+  }
+  h4{
+    color:$gray;
+  }
+}
+.hero-unit{
+  text-align:center;
+  color:$grayLight;
+  p{
+    font-style:italic;
+    b{
+      color:$gray;
+    }
+  }
+}
+.spacer{
+  width:100%;
+  height:4px;
+  background:url(spacer.png);
+  margin-bottom:20px;
+}
 
+/**************************************
+* Miscellaneous Styling
+**************************************/
+
+#testimonials{
+  color:$grayLight;
+  letter-spacing:2px;
+  font-style:italic;
+}
+.thumbnail{
+  text-align:center;
+}
+
+/**************************************
+* Footer Styling
+**************************************/
+#footer{
+  background:url(footer_bg.png) repeat;
+  position:relative;
+  text-align:center;
+  opacity: 0.5;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px rgba(255, 255, 255, 0.6) inset;
+  -moz-transition: all 0.1s ease-in 0s;
+}
+
+/**************************************
+* Carousel Styling
+**************************************/
+.testimonial-wrapper{
+    width:620px;
+    margin:0 auto;
+    margin-bottom:30px;
+    position:relative;
+
+    .bx-next, .bx-prev{
+      position:absolute;
+      width:31px;
+      height:31px;
+      -moz-transition: all 0.2s ease-in-out;  /* FF4+ */
+      -o-transition: all 0.2s ease-in-out;  /* Opera 10.5+ */
+      -webkit-transition: all 0.2s ease-in-out;  /* Saf3.2+, Chrome */
+      -ms-transition: all 0.2s ease-in-out;  /* IE10? */
+      transition: all 0.2s ease-in-out;
+      background:url(control-arrow.png);
+      text-indent:-99999px;
+    }
+
+    .bx-prev:hover, .bx-next:hover{
+      background:url(control-arrow-on.png);
+    }
+
+    .bx-next, .bx-next:hover{
+      position:absolute;
+      top:48px;
+      right:-50px;
+      background-position:31px;
+    }
+    .bx-prev{
+      position:absolute;
+      top:48px;
+      left:-70px;
+    }
+}

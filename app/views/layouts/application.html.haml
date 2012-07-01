@@ -1,11 +1,28 @@
 !!! 5
 %html
-%head
-  %title Portfolio
-  = stylesheet_link_tag    "application", :media => "all"
-  = javascript_include_tag "application"
-  = csrf_meta_tags
-%body
-  .container
+  %head
+    %title Portfolio
+    =yield(:head)
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    %link{"rel"=>"stylesheet", "href"=>"http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700", "type"=>"text/css"}
+  %body
+    .container
+      .row
+        .span6.offset6
+          %ul#social-links
+            %li= image_tag "twitter-off.png", mouseover: "twitter-on.png"
+            %li= image_tag "facebook-off.png", mouseover: "facebook-on.png"
+            %li= image_tag "rss-off.png", mouseover: "rss-on.png"
     = yield
-
+    #footer
+      .container
+        .row
+          .span4
+            %h3 Twitter
+          .span4
+            %h3 Facebook
+          .span4
+            %h3 Contact Me
+    %p.center &copy;2012 Bryce Batson, All Rights Reserved
