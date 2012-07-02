@@ -9,29 +9,6 @@
     %link{"rel"=>"stylesheet", "href"=>"http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700", "type"=>"text/css"}
   %body
     .container
-      .row
-        .span6.offset6
-          %ul#social-links
-            %li= image_tag "twitter-off.png", mouseover: "twitter-on.png"
-            %li= image_tag "facebook-off.png", mouseover: "facebook-on.png"
-            %li= image_tag "rss-off.png", mouseover: "rss-on.png"
+      = render :partial => 'layouts/header'
     = yield
-    #footer
-      .container
-        .row
-          .span4
-            %h3 Twitter
-            = @twitter_feed
-            %h3 Contact Me
-          .span4
-            %h3 Facebook
-          .span4
-            %h3 Twitter
-            - @twitter_feed.each do |status|
-              .well.feeds
-                %span
-                  = time_ago_in_words(status.created_at)
-                  ago
-                %i= status.text
-                = image_tag("twitter-bird.png",class: "twitter-bird")
-      %p &copy;2012 Bryce Batson, All Rights Reserved
+    = render :partial => 'layouts/footer'
