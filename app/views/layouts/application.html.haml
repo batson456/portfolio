@@ -20,10 +20,16 @@
       .container
         .row
           .span4
-            %h3 Twitter
-            = @twitter_feed
+            %h3 Contact Me
           .span4
             %h3 Facebook
           .span4
-            %h3 Contact Me
-    %p.center &copy;2012 Bryce Batson, All Rights Reserved
+            %h3 Twitter
+            - @twitter_feed.each do |status|
+              .well.feeds
+                %span
+                  = time_ago_in_words(status.created_at)
+                  ago
+                %i= status.text
+                = image_tag("twitter-bird.png",class: "twitter-bird")
+      %p &copy;2012 Bryce Batson, All Rights Reserved
