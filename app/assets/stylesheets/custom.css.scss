@@ -127,37 +127,20 @@ a.thumbnail:hover {
 #footer{
   background:url(footer_bg.png) repeat;
   position:relative;
-  text-align:center;
   opacity: 0.5;
   width: 100%;
   height: 120px;
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px rgba(255, 255, 255, 0.6) inset;
   -moz-transition: all 0.1s ease-in 0s;
-  .feeds{
+  .feed{
     position:relative;
-    background: white;
     color:$gray;
     font-weight:bold;
-    .twitter-bird{
-      position:absolute;
-      bottom:5px;
-      right:5px;
-    }
-    span{
-      color:$blue;
-    }
+    border-bottom:1px dashed #ccc;
   }
-  .feeds :before{
-    content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: -20px;
-	top: 15px;
-	border: 10px solid;
-	border-color: #fff #fff transparent transparent;
+  a{
+    color:black;
   }
 }
 

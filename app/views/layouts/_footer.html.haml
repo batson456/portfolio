@@ -1,15 +1,15 @@
 #footer
   .container
     .row
-      .span6
+      .span4
         %h3 Connect With Me
-      .span6
-        %h3 Twitter
+        %br/
+        %b Bryce Batson
+        %br/
+      .span4
+        %h4 LATEST TWEETS
         - @twitter_feed.each do |status|
-          .well.feeds
-            %span
-              = time_ago_in_words(status.created_at)
-              ago
-            %i= status.text
-            = image_tag("twitter-bird.png",class: "twitter-bird")
+          .feed
+            = link_to "#{time_ago_in_words(status.created_at)} ago", ""
+            = status.text
   %p &copy;2012 Bryce Batson, All Rights Reserved
