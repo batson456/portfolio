@@ -21,6 +21,13 @@ body{
 
 
 }
+a{
+  color:$green;
+}
+a:hover{
+  color:$gray;
+  text-decoration:none;
+}
 .center{
   text-align:center;
 }
@@ -154,12 +161,6 @@ a.thumbnail:hover {
   .feed:last-child{
     border-bottom:none;
   }
-  a{
-    color:$gray;
-  }
-  a:hover{
-    color:$blue;
-  }
   h4{
     text-transform:uppercase;
   }
@@ -187,7 +188,6 @@ a.thumbnail:hover {
   border-top:1px dashed $grayLight;
   width:100%;
   p{
-    color:$green;
     font-size:11px;
     text-align:center;
   }
