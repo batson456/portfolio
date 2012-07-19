@@ -1,15 +1,31 @@
+.bottom-shadow
 #footer
   .container
     .row
       .span4
-        %h3 Connect With Me
-        %br/
+        %h4 Connect With Me
         %b Bryce Batson
         %br/
+        %p
+          376 Margaret St Apt D-21
+        %p
+          Plattsburgh, NY 12901
+        %br/
+        %p
+          Phone: 802.473.0249
+        %p
+          Email: Batson456@gmail.com
       .span4
-        %h4 LATEST TWEETS
+        %h4 Latest Tweets
         - @twitter_feed.each do |status|
           .feed
             = link_to "#{time_ago_in_words(status.created_at)} ago", ""
             = status.text
+      .span4
+        %h4 Who am I?
+        %p.introduction
+          %span "
+          I am a junior developer with two years of PHP and MySQL development experience and almost 5 years of HTML experience.
+          %span "
+#sub-footer
   %p &copy;2012 Bryce Batson, All Rights Reserved

@@ -8,6 +8,7 @@ $navbarLinkColorHover: $green;
 
 @import "bootstrap";
 
+
 /***************************************
 * Default Styling
 ***************************************/
@@ -17,6 +18,7 @@ body{
   background: url(body_bg.png) repeat top left;
   color:$grayLight;
   font: 14px/1.5 'Josefin Sans', Arial, 'Liberation Sans', FreeSans, sans-serif; color:#9A9A9A;
+
 
 }
 .center{
@@ -53,6 +55,9 @@ body{
   }
   img{
     opacity: .5;
+  }
+  img:hover{
+    opacity: 1;
   }
 }
 /**************************************
@@ -124,23 +129,67 @@ a.thumbnail:hover {
 /**************************************
 * Footer Styling
 **************************************/
+.bottom-shadow{
+    background:url(shadow.png) no-repeat;
+    background-position:center top;
+    height:21px;
+}
 #footer{
-  background:url(footer_bg.png) repeat;
   position:relative;
-  opacity: 0.5;
+  padding-top:20px;
+  padding-bottom:20px;
+  opacity:.8;
   width: 100%;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px rgba(255, 255, 255, 0.6) inset;
+  /*background-color: rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px rgba(255, 255, 255, 0.6) inset;
   -moz-transition: all 0.1s ease-in 0s;
   .feed{
     position:relative;
-    color:$gray;
+    color:$grayLight;
     font-weight:bold;
-    border-bottom:1px dashed #ccc;
+    border-bottom:2px dashed $grayLight;
+    padding-top:8px;
+    padding-bottom:8px;
+  }
+  .feed:last-child{
+    border-bottom:none;
   }
   a{
-    color:black;
+    color:$gray;
+  }
+  a:hover{
+    color:$blue;
+  }
+  h4{
+    text-transform:uppercase;
+  }
+  p{
+    line-height:.7em;
+  }
+  p.introduction{
+    line-height: 1.8em; 
+    font-size:13px;
+    font-style:italic;
+  }
+  span{
+    color:$green;
+    font-size:18px;
+  }
+  b{
+    font-size:1.1em;
+    line-height:2.9em;
+  }
+
+}
+
+#sub-footer{
+  padding-top:8px;
+  border-top:1px dashed $grayLight;
+  width:100%;
+  p{
+    color:$green;
+    font-size:11px;
+    text-align:center;
   }
 }
 
