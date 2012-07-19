@@ -8,11 +8,6 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    #contact
-      =form_for @message do |f|
-        "#{f.label :name}:"
-        =f.textfield :name
-        %br/
     .container
       = render :partial => 'layouts/header'
     = yield
