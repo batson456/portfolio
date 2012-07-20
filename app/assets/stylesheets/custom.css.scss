@@ -1,5 +1,5 @@
 $green: #a7c84d;
-$blue: #00bbff;
+$blue: #84a6bc;
 $navbarBackground: white;
 $navbarBackgroundHighlight: white;
 $navbarText:#999;
@@ -13,7 +13,7 @@ $navbarLinkColorHover: $green;
 * Default Styling
 ***************************************/
 body{
-  padding-top:20px;
+  padding-top:120px;
   margin-bottom:0px;
   background: url(body_bg.png) repeat top left;
   color:$grayLight;
@@ -22,7 +22,7 @@ body{
 
 }
 a{
-  color:$green;
+  color:$blue;
 }
 a:hover{
   color:$gray;
@@ -67,6 +67,7 @@ a:hover{
     opacity: 1;
   }
 }
+
 /**************************************
 * Shadow and Spacer Styling
 **************************************/
@@ -89,7 +90,7 @@ a:hover{
     top:-.5em;
     padding:0px;
     font-size:40px;
-    color:$green;
+    color:$blue;
   }
   .bottom{
     top:2em;
@@ -102,15 +103,24 @@ a:hover{
 }
 .hero-unit{
   text-align:center;
+  position:relative;
   color:$grayLight;
   p{
     font-style:italic;
     b{
-      color:$green;
+      color:$blue;
       font-size:1.2em;
     }
   }
 }
+.logo{
+  z-index:9999;
+  left:50%;
+  margin-left:-138px;
+  position:absolute;
+  top:-160px;
+}
+
 .spacer{
   width:100%;
   height:4px;
@@ -131,7 +141,7 @@ a:hover{
   text-align:center;
 }
 a.thumbnail:hover {
-  border-color:$green;
+  border-color:$blue;
 }
 /**************************************
 * Footer Styling
@@ -173,7 +183,7 @@ a.thumbnail:hover {
     font-style:italic;
   }
   span{
-    color:$green;
+    color:$blue;
     font-size:18px;
   }
   b{
