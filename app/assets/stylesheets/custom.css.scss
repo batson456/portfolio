@@ -5,6 +5,7 @@ $navbarBackgroundHighlight: white;
 $navbarText:#999;
 $navbarLinkColor: #999;
 $navbarLinkColorHover: $green;
+$linkColor:$blue;
 
 @import "bootstrap";
 
@@ -54,20 +55,31 @@ a:hover{
     border-right:none;
   }
 }
-#social-links{
-  text-align:right;
-  list-style:none;
-  li{
-    display:inline;
-  }
-  img{
-    opacity: .5;
-  }
-  img:hover{
-    opacity: 1;
+.contact_container{
+  position:fixed;
+  z-index:9999;
+  top:0px;
+  left:0px;
+  width:auto;
+  height:100%;
+  display:none;
+  .contact{
+    margin-top:20px;
+    position:relative
   }
 }
-
+.toggle{
+  position:fixed;
+  border:1px solid white;
+  top:0px;
+  left:0px;
+  z-index:9999;
+  width:100px;
+  cursor:pointer;
+  text-align:center;
+  background:$blue;
+  color:white;
+}
 /**************************************
 * Shadow and Spacer Styling
 **************************************/

@@ -1,0 +1,28 @@
+.contact_container.well
+  .contact
+    =form_for @message, :url => 'contact/new' do |f|
+      =f.label :name
+      =f.text_field :name
+      %br/
+      =f.label :email
+      =f.text_field :email
+      %br/
+      =f.label :message
+      =f.text_area :message
+      %br/
+      =f.submit :class => 'btn btn-primary'
+    %p
+      =link_to image_tag('facebook-off.png', :mouseover => 'facebook-on.png'), '#'
+      =link_to image_tag('twitter-off.png', :mouseover => 'twitter-on.png'),'#'
+      =link_to image_tag('rss-off.png',:mouseover => 'rss-on.png'),'#'
+.toggle
+  Contact Me <b>+</b>
+
+:javascript
+  $('.toggle').toggle(function(){
+    $('.contact_container').show('slow');
+    $(this).html('Close <b>-</b>');
+  }, function(){
+    $('.contact_container').hide('slow');
+    $(this).html('Contact Me <b>+</b>');
+  });
