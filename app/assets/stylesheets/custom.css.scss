@@ -22,13 +22,6 @@ body{
 
 
 }
-a{
-  color:$blue;
-}
-a:hover{
-  color:$gray;
-  text-decoration:none;
-}
 .center{
   text-align:center;
 }
@@ -61,11 +54,14 @@ a:hover{
   top:0px;
   left:0px;
   width:auto;
-  height:100%;
+  height:auto;
   display:none;
   .contact{
     margin-top:20px;
     position:relative
+  }
+  textarea{
+    height:70px;
   }
 }
 .toggle{
@@ -130,7 +126,7 @@ a:hover{
   left:50%;
   margin-left:-138px;
   position:absolute;
-  top:-160px;
+  top:-170px;
 }
 
 .spacer{
