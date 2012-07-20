@@ -81,12 +81,12 @@ body{
 **************************************/
 .divider{
   margin:20px 0 20px 0;
-  text-shadow: 0px 1px 1px #fff;
-  border-top:1px solid $grayLight;
+  border-top:2px dashed $grayLight;
   text-align:center;
   font-size:30px;
   span,h4{
     color:$grayLight;
+    text-shadow:1px 1px white, -1px -1px #444;
     padding-left:8px;
     padding-right:8px;
     position:relative;
@@ -198,6 +198,9 @@ a.thumbnail:hover {
   b{
     font-size:1.1em;
     line-height:2.9em;
+  }
+  img{
+    margin:0 8px 5px 0;
   }
 
 }
