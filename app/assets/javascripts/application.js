@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= jquery.bxSlider.min
 //= require_tree .
