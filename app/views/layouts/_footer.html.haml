@@ -15,6 +15,10 @@
           Phone: 802.473.0249
         %p
           Email: Batson456@gmail.com
+        %p
+          =link_to image_tag('facebook-off.png', :mouseover => 'facebook-on.png'), '#'
+          =link_to image_tag('twitter-off.png', :mouseover => 'twitter-on.png'),'#'
+          =link_to image_tag('rss-off.png',:mouseover => 'rss-on.png'),'#'
       .span4
         %h4 Latest Tweets
         - @twitter_feed.each do |status|
