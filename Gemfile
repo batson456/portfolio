@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-group :development do
-  gem 'sqlite3'
-end
+gem 'therubyracer'
+gem 'execjs'
+gem 'sqlite3'
 
 gem 'rails', '3.2.6'
 gem 'twitter'
@@ -16,10 +16,6 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'bootstrap-sass'
   gem 'uglifier', '>= 1.0.3'
-end
-
-group :production do
-  gem 'pg'
 end
 
 gem 'jquery-rails'
