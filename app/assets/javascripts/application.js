@@ -13,4 +13,5 @@
 //= require jquery
 //= require bxslider
 //= require jquery_ujs
+//= require scripts
 //= require_tree .

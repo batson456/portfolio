@@ -6,13 +6,3 @@
       =link_to image_tag('rss-off.png',:mouseover => 'rss-on.png'),'#'
 %a.toggle
   Contact Me <b>+</b>
-
-:javascript
-  $('.toggle').toggle(function(){
-    $('.contact_container').show('slow');
-    $(this).html('Close <b>-</b>');
-  }, function(){
-    $('.contact_container').hide('slow');
-    $(this).html('Contact Me <b>+</b>');
-  });
-
