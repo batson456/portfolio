@@ -50,21 +50,19 @@ body{
 }
 .contact_container{
   position:fixed;
+  padding-top:30px;
   z-index:9999;
   top:0px;
   left:0px;
   width:auto;
   height:auto;
   display:none;
-  .contact{
-    margin-top:20px;
-    position:relative
-  }
   textarea{
     height:70px;
   }
 }
 .toggle{
+  display:none;
   position:fixed;
   border:1px solid white;
   top:0px;
@@ -75,6 +73,11 @@ body{
   text-align:center;
   background:$blue;
   color:white;
+}
+.toggle:hover{
+  color:black;
+  opacity:.5;
+  text-decoration:none;
 }
 /**************************************
 * Shadow and Spacer Styling
@@ -187,7 +190,7 @@ a.thumbnail:hover {
     line-height:.7em;
   }
   p.introduction{
-    line-height: 1.8em; 
+    line-height: 1.8em;
     font-size:13px;
     font-style:italic;
   }
