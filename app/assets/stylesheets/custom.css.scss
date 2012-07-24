@@ -49,7 +49,7 @@ body{
   }
 }
 .contact_container{
-  position:fixed;
+  float:left;
   padding-top:30px;
   z-index:9999;
   top:0px;
@@ -62,8 +62,8 @@ body{
   }
 }
 .toggle{
+  float:left;
   display:none;
-  position:fixed;
   border:1px solid white;
   top:0px;
   left:0px;
