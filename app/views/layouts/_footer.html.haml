@@ -25,14 +25,13 @@
           Batson456@gmail.com
         %br/
         %p
-          =link_to image_tag('facebook-off.png', :mouseover => 'facebook-on.png'), '#'
-          =link_to image_tag('twitter-off.png', :mouseover => 'twitter-on.png'),'#'
-          =link_to image_tag('rss-off.png',:mouseover => 'rss-on.png'),'#'
+          =link_to image_tag('facebook-off.png', :mouseover => 'facebook-on.png'), 'http://www.facebook.com/bryce.batson.1'
+          =link_to image_tag('twitter-off.png', :mouseover => 'twitter-on.png'),'http://twitter.com/BryceBatson1'
       .span4
         %h4 Latest Tweets
         - @twitter_feed.each do |status|
           .feed
-            = link_to "#{time_ago_in_words(status.created_at)} ago", ""
+            = link_to "#{time_ago_in_words(status.created_at)} ago", "http://twitter.com/BryceBatson1"
             = status.text
       .span4
         %h4 Who am I?
