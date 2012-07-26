@@ -1,6 +1,4 @@
 Portfolio::Application.routes.draw do
-  get "contact/new"
-
   root :to => 'static_pages#home'
 
   # The priority is based upon order of creation:
