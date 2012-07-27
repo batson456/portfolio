@@ -48,37 +48,6 @@ body{
     border-right:none;
   }
 }
-.contact_container{
-  float:left;
-  padding-top:30px;
-  z-index:9999;
-  top:0px;
-  left:0px;
-  width:auto;
-  height:auto;
-  display:none;
-  textarea{
-    height:70px;
-  }
-}
-.toggle{
-  float:left;
-  display:none;
-  border:1px solid white;
-  top:0px;
-  left:0px;
-  z-index:9999;
-  width:100px;
-  cursor:pointer;
-  text-align:center;
-  background:$blue;
-  color:white;
-}
-.toggle:hover{
-  color:black;
-  opacity:.5;
-  text-decoration:none;
-}
 /**************************************
 * Shadow and Spacer Styling
 **************************************/
