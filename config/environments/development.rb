@@ -1,4 +1,16 @@
 Portfolio::Application.configure do
+  # Setup gmail mailer
+  config.action_mailer.deconfig.action_mailer.deliver_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => 'bbatson.com',
+    :user_name            => 'batson456@gmail.com',
+    :password             => 'britney12',
+    :authentication       => 'plain',
+    :enable_starttls_auto => true
+  }
+
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
