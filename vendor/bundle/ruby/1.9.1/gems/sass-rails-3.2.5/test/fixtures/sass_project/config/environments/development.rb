@@ -24,4 +24,7 @@ ScssProject::Application.configure do
 
   # Do not compress assets
   config.assets.compress = false
+
+  config.action_mailer.raise_delivery_errors = true
+
 end
