@@ -1,4 +1,6 @@
 Portfolio::Application.routes.draw do
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
   root :to => 'static_pages#home'
 
   # The priority is based upon order of creation:
