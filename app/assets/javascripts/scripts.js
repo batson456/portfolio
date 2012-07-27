@@ -1,6 +1,9 @@
 $(document).ready(function(){
-    $('.contact_form').hide('slow');
-    $('.toggle').click(function(){
-        $('.contact_form').toggle('slow');
-    });
+    // hide the div as soon as the DOM is ready
+    $('.contact_container').hide();
+    $('.toggle').show();
 });
+
+function toggle_div(link){
+    $(link).toggle('slow');
+}
