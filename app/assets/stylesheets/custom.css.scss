@@ -147,6 +147,10 @@ body{
   color:$grayLight;
   letter-spacing:2px;
   font-style:italic;
+  .author{
+    font-size:10px;
+    float:right;
+  }
 }
 .thumbnail{
   text-align:center;
