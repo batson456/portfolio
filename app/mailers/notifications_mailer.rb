@@ -4,6 +4,6 @@ class NotificationsMailer < ActionMailer::Base
 
   def new_message(message)
     @message = message
-    mail(:subject=> "[bbatson.tld] #{message.subject}")
+    mail(:subject=> "[bbatson.com] #{message.subject}")
   end
 end
