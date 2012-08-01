@@ -8,6 +8,7 @@ gem 'rails', '3.2.6'
 gem 'twitter'
 gem 'haml-rails'
 gem 'bxslider-rails'
+gem 'client_side_validations'
 
 # Gems used only for assets and not required
 # in production environments by default.
