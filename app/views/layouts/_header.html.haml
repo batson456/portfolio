@@ -1,0 +1,23 @@
+#contact_form_container
+  #contact_form
+    = form_for @message, :url => contact_path, :validate => true do |form|
+      -if @message.errors.any?
+        %ul
+          - @message.errors.full_messages.each do |msg|
+            %li
+              = msg
+      %p
+        =form.label :name
+        =form.text_field :name
+      %p
+        =form.label :email
+        =form.text_field :email
+      %p
+        =form.label :subject
+        =form.text_field :subject
+      %p
+        =form.label :body
+        =form.text_area :body
+      %p
+        =form.submit "Send", :class => 'btn-primary'
+  #contact_link Contact Me <b>+</b>

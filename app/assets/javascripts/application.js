@@ -13,5 +13,6 @@
 //= require jquery
 //= require bxslider
 //= require jquery_ujs
+//= require rails.validations
 //= require scripts
 //= require_tree .
